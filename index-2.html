@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <style>
+        .buttonU {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            position: relative;
+            height: 50px;
+            width: 20vw;
+        }
+
+        #shifty {
+            position: absolute;
+            display: block;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="text">
+            <div id="text-3">hahahhah, peri and jam pasir gimana ya kocak juga sebutannya tapi lucu juga klo dipikir-pikir</div>
+            <div id="text-4">which u want?</div>
+        </div>
+        <div class="buttonU">
+            <div class='container'>
+                <button type='button' id='shifty' onclick="change">just a friend</button>
+            </div>
+            <div class="container-2">
+                <button id="btn-6" onclick="sendMail2()">HTS, like Peri and Jam pasir</button>
+                <button id="btn-7" onclick="sendMail3()">Kita menjadi pasangan</button>
+            </div>
+        </div>
+        <button id="btn-8">Next</button>
+    </div>
+    <script src="script2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+/* Tema cinta dan kucing */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    background: linear-gradient(135deg, #fbc2eb, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.body {
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    background-color: rgba(255, 182, 193, 0.3); /* Soft pink overlay */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(255, 71, 126, 0.2);
+    position: relative;
+}
+
+.Gambar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.foto-peri {
+    width: 180px;
+    height: 180px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 4px solid #ffa3b9;
+    box-shadow: 0 4px 10px rgba(255, 71, 126, 0.2);
+    background-image: url('https://path-to-cat-paw-image');
+    background-position: center;
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+
+.foto-peri:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(255, 71, 126, 0.4);
+    border-color: #ff9a9e;
+}
+
+/* Text styling */
+.text-2 {
+    margin-top: 20px;
+}
+
+#text-2 {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ff6f91;
+}
+
+#text-2 button {
+    background-color: transparent;
+    color: #ff467e;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#text-2 button:hover {
+    color: #ff9a9e;
+}
+
+/* Button styles */
+.button {
+    margin: 20px 0;
+}
+
+.button button {
+    padding: 12px 25px;
+    background-color: #ff9a9e;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button button:hover {
+    background-color: #ff6f91;
+    box-shadow: 0 8px 15px rgba(255, 71, 126, 0.4);
+}
+
+/* Musik */
+.musik {
+    margin-top: 20px;
+}
+
+.musik audio {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 15px;
+    outline: none;
+}
+
+/* Cat paw background on page */
+.body::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    background-image: url('https://path-to-cat-paw-pattern');
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.body::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 150px;
+    height: 150px;
+    background-image: url('https://path-to-cat-silhouette-image');
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
+}
